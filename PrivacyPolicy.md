@@ -27,4 +27,4 @@ Updates: We regularly update Wakey to address any security vulnerabilities and i
 
 Contact Us
 
-If you have any questions or concerns about this privacy policy, please feel free to contact us at support@wakeyapp.com.
+If you have any questions or concerns about this privacy policy, please feel free to contact me at armen.hakobyan@outlook.com.
