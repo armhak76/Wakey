@@ -5,3 +5,15 @@
 /.vs/wakey
 /packages
 /wakey/wakey (Package)/obj
+/ARM64/Release_SideLoad/wakey
+/Release_SideLoad/wakey
+/wakey/wakey/ARM64/Release_SideLoad
+/wakey/wakey/Generated Files
+/wakey/wakey/Release_SideLoad
+/wakey/wakey/x64/Release_SideLoad
+/wakey/wakey (Package)/AppPackages/wakey (Package)_3.0.56.0_Release_SideLoad_Test
+/wakey/wakey (Package)/bin/ARM64/Release_SideLoad
+/wakey/wakey (Package)/AppPackages
+/wakey/wakey (Package)/bin
+/wakey/wakey (Package)/BundleArtifacts
+/x64/Release_SideLoad/wakey
