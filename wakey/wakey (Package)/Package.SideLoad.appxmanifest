@@ -13,7 +13,7 @@
   <Identity
     Name="ArmenHakobyan.37146BC221925"
     Publisher="CN=48ADDF26-3680-43EB-B968-D1B3F8E30B15"
-    Version="3.0.50.0" />
+    Version="3.0.56.0" />
   <mp:PhoneIdentity PhoneProductId="a056dc87-9de6-4708-90e3-8ed3966ddc14" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
   <Properties>
     <DisplayName>Wakey</DisplayName>
