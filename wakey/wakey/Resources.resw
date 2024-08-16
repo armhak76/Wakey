@@ -1,0 +1,483 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="resAboutEmailLnk.Content" xml:space="preserve">
+    <value>Support Email</value>
+  </data>
+  <data name="resAboutHomePageLnk.Content" xml:space="preserve">
+    <value>Support Web Page</value>
+  </data>
+  <data name="resAboutPurchaseBtn.Content" xml:space="preserve">
+    <value>Go Pro</value>
+  </data>
+  <data name="resAboutPurchaseStc.Description" xml:space="preserve">
+    <value>Purchase the professional version of the application to unlock all its features</value>
+  </data>
+  <data name="resAboutPurchaseStc.Header" xml:space="preserve">
+    <value>Go Pro</value>
+  </data>
+  <data name="resAboutRateBtn.Content" xml:space="preserve">
+    <value>Rate</value>
+  </data>
+  <data name="resAboutRateStc.Description" xml:space="preserve">
+    <value>Rate the application and tell us what you like or dislike about it</value>
+  </data>
+  <data name="resAboutRateStc.Header" xml:space="preserve">
+    <value>Rate</value>
+  </data>
+  <data name="resAboutUpdateBtn.Content" xml:space="preserve">
+    <value>Check</value>
+  </data>
+  <data name="resAboutUpdateStc.Description" xml:space="preserve">
+    <value>Check for online application updates</value>
+  </data>
+  <data name="resAboutUpdateStc.Header" xml:space="preserve">
+    <value>Updates</value>
+  </data>
+  <data name="resAppRestartedAsAdmin" xml:space="preserve">
+    <value>Application is restarted in administrator mode</value>
+  </data>
+  <data name="resAppThemeMsg" xml:space="preserve">
+    <value>Changing theme to other than system default requires an application restart. Do you want to restart the application now ?</value>
+  </data>
+  <data name="resAppTitle" xml:space="preserve">
+    <value>Wakey</value>
+  </data>
+  <data name="resAppTitleAdmin" xml:space="preserve">
+    <value>(Administrator)</value>
+  </data>
+  <data name="resBtDynamicLockDisStc.Description" xml:space="preserve">
+    <value>Available only if application is sideloaded and is in administrator mode</value>
+  </data>
+  <data name="resBtDynamicLockDisStc.Header" xml:space="preserve">
+    <value>Disable windows dynamic lock</value>
+  </data>
+  <data name="resBtDynamicLockOpnBtn.Content" xml:space="preserve">
+    <value>Manage</value>
+  </data>
+  <data name="resBtDynamicLockOpnStc.Description" xml:space="preserve">
+    <value>Manage windows' dynamic lock settings</value>
+  </data>
+  <data name="resBtDynamicLockOpnStc.Header" xml:space="preserve">
+    <value>Open windows dynamic lock</value>
+  </data>
+  <data name="resBtDynamicLockSte.Description" xml:space="preserve">
+    <value>Override windows' dynamic lock settings to avoid overlapping</value>
+  </data>
+  <data name="resBtDynamicLockSte.Header" xml:space="preserve">
+    <value>Dynamic lock</value>
+  </data>
+  <data name="resBtDynamicLockTb.Text" xml:space="preserve">
+    <value>Windows dynamic lock</value>
+  </data>
+  <data name="resBtHeaderStc.Description" xml:space="preserve">
+    <value>Link to paired bluetooth device to lock the screen when you are away</value>
+  </data>
+  <data name="resBtHeaderStc.Header" xml:space="preserve">
+    <value>Enable bluetooth link</value>
+  </data>
+  <data name="resBtInfobar.Message" xml:space="preserve">
+    <value>Bluetooth is disabled in windows settings</value>
+  </data>
+  <data name="resBtInfobar.Title" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="resBtInfobarBtn.Content" xml:space="preserve">
+    <value>Enable</value>
+  </data>
+  <data name="resBtSettingsDynamicLinkStc.Description" xml:space="preserve">
+    <value>Automatically lock screen when selected device is away</value>
+  </data>
+  <data name="resBtSettingsDynamicLinkStc.Header" xml:space="preserve">
+    <value>Dynamic bluetooth link</value>
+  </data>
+  <data name="resBtSettingsNewDeviceBtn.Content" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="resBtSettingsNewDeviceStc.Description" xml:space="preserve">
+    <value>Pair a new bluetooth device with your computer</value>
+  </data>
+  <data name="resBtSettingsNewDeviceStc.Header" xml:space="preserve">
+    <value>New device</value>
+  </data>
+  <data name="resBtSettingsSte.Description" xml:space="preserve">
+    <value>Automatically lock the screen when you are away</value>
+  </data>
+  <data name="resBtSettingsSte.Header" xml:space="preserve">
+    <value>Dynamic bluetooth link</value>
+  </data>
+  <data name="resBtSettingsTb.Text" xml:space="preserve">
+    <value>Bluetooth settings</value>
+  </data>
+  <data name="resGeneralAppAndBehavSte.Description" xml:space="preserve">
+    <value>Override your application system settings</value>
+  </data>
+  <data name="resGeneralAppAndBehavSte.Header" xml:space="preserve">
+    <value>System settings</value>
+  </data>
+  <data name="resGeneralAppAndBehavTb.Text" xml:space="preserve">
+    <value>Appearance and behaviour</value>
+  </data>
+  <data name="resGeneralHeaderStc.Description" xml:space="preserve">
+    <value>Start application automatically on windows logon</value>
+  </data>
+  <data name="resGeneralHeaderStc.Header" xml:space="preserve">
+    <value>Autostart</value>
+  </data>
+  <data name="resGeneralHotkeyInf.Message" xml:space="preserve">
+    <value>The key sequence is already registered.</value>
+  </data>
+  <data name="resGeneralHotkeyInf.Title" xml:space="preserve">
+    <value>Hotkey</value>
+  </data>
+  <data name="resGeneralHotkeyStc.Description" xml:space="preserve">
+    <value>Specify global hotkey to activate the application (only Shift, Control and Alt keys with letters are accepted)</value>
+  </data>
+  <data name="resGeneralHotkeyStc.Header" xml:space="preserve">
+    <value>Hotkey</value>
+  </data>
+  <data name="resGeneralHotkeyTxt.PlaceholderText" xml:space="preserve">
+    <value>Key combination</value>
+  </data>
+  <data name="resGeneralNotifStc.Description" xml:space="preserve">
+    <value>Enable status update toast notifications</value>
+  </data>
+  <data name="resGeneralNotifStc.Header" xml:space="preserve">
+    <value>Notifications</value>
+  </data>
+  <data name="resGeneralRunAsAlwaysStc.Description" xml:space="preserve">
+    <value>Always start in administrator mode</value>
+  </data>
+  <data name="resGeneralRunAsAlwaysStc.Header" xml:space="preserve">
+    <value>Always start as administrator</value>
+  </data>
+  <data name="resGeneralRunAsBtn.Content" xml:space="preserve">
+    <value>Run As Admin</value>
+  </data>
+  <data name="resGeneralRunAsStc.Description" xml:space="preserve">
+    <value>Restart the process in administrator mode</value>
+  </data>
+  <data name="resGeneralRunAsStc.Header" xml:space="preserve">
+    <value>Start as administrator</value>
+  </data>
+  <data name="resGeneralRunAsSte.Description" xml:space="preserve">
+    <value>Allow running with administrator privileges to override some system settings</value>
+  </data>
+  <data name="resGeneralRunAsSte.Header" xml:space="preserve">
+    <value>Allow elevation</value>
+  </data>
+  <data name="resGeneralRunAsTb.Text" xml:space="preserve">
+    <value>Elevation</value>
+  </data>
+  <data name="resGeneralThemeStc.Description" xml:space="preserve">
+    <value>Override your system application theme</value>
+  </data>
+  <data name="resGeneralThemeStc.Header" xml:space="preserve">
+    <value>Application theme</value>
+  </data>
+  <data name="resNavBluetoothStp.Description" xml:space="preserve">
+    <value>Navigate to bluetooth Link</value>
+  </data>
+  <data name="resNavBluetoothStp.Header" xml:space="preserve">
+    <value>Bluetooth link</value>
+  </data>
+  <data name="resNavGeneralStp.Description" xml:space="preserve">
+    <value>Navigate to General</value>
+  </data>
+  <data name="resNavGeneralStp.Header" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="resNavSettingsStp.Description" xml:space="preserve">
+    <value>Navigate to Settings</value>
+  </data>
+  <data name="resNavSettingsStp.Header" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="resNavView.Header" xml:space="preserve">
+    <value>Wakey</value>
+  </data>
+  <data name="resNavViewItemAbout.Content" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="resNavViewItemBluetooth.Content" xml:space="preserve">
+    <value>Bluetooth</value>
+  </data>
+  <data name="resNavViewItemGeneral.Content" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="resNavViewItemSettings.Content" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="resPurchaseAlreadyMsg" xml:space="preserve">
+    <value>You already bought this app and have a fully-licensed version.</value>
+  </data>
+  <data name="resPurchaseCancelledMsg" xml:space="preserve">
+    <value>Product was not purchased, it may have been cancelled.</value>
+  </data>
+  <data name="resPurchaseFromMsStoreMsg" xml:space="preserve">
+    <value>You should install the application from Microsoft Store in order to use this feature.</value>
+  </data>
+  <data name="resPurchaseMsg1" xml:space="preserve">
+    <value>This functionality (hiding application in the windows tray) has been disabled because it requires a purchase. If you just want to exit, right click application's tray icon and select 'Exit' in the popup menu. Otherwise, would you like to be navigated to the About page so you can purchase this feature?</value>
+  </data>
+  <data name="resPurchaseMsg2" xml:space="preserve">
+    <value>This functionality (hiding application in the windows tray) has been disabled because it requires a purchase. Click 'GoPro' button to purchase this feature or right click application's tray icon and select 'Exit' in the popup menu to quit.</value>
+  </data>
+  <data name="resPurchaseNetworkErrMsg" xml:space="preserve">
+    <value>Product was not purchased due to a Network Error.</value>
+  </data>
+  <data name="resPurchaseOwnMsg" xml:space="preserve">
+    <value>You already own this product.</value>
+  </data>
+  <data name="resPurchaseServerErrMsg" xml:space="preserve">
+    <value>Product was not purchased due to a Server Error.</value>
+  </data>
+  <data name="resPurchaseSuccessMsg" xml:space="preserve">
+    <value>Product was purchased successfully.</value>
+  </data>
+  <data name="resPurchaseUnknownErrMsg" xml:space="preserve">
+    <value>Product was not purchased due to an Unknown Error.</value>
+  </data>
+  <data name="resRateFailedMsg" xml:space="preserve">
+    <value>Failed to rate the application!</value>
+  </data>
+  <data name="resRelatedSettingsTb.Text" xml:space="preserve">
+    <value>Related settings</value>
+  </data>
+  <data name="resSettingsBatSaverStc.Description" xml:space="preserve">
+    <value>Stay active even in battery saver mode</value>
+  </data>
+  <data name="resSettingsBatSaverStc.Header" xml:space="preserve">
+    <value>Battery saver</value>
+  </data>
+  <data name="resSettingsBatteryStc.Description" xml:space="preserve">
+    <value>Stay active when running on battery power</value>
+  </data>
+  <data name="resSettingsBatteryStc.Header" xml:space="preserve">
+    <value>Battery power</value>
+  </data>
+  <data name="resSettingsBatterySte.Description" xml:space="preserve">
+    <value>Keep application active and enable the settings above when running on battery power or even battery saver mode</value>
+  </data>
+  <data name="resSettingsBatterySte.Header" xml:space="preserve">
+    <value>Battery and battery saver</value>
+  </data>
+  <data name="resSettingsBatteryTb.Text" xml:space="preserve">
+    <value>Optional</value>
+  </data>
+  <data name="resSettingsGeneralSte.Description" xml:space="preserve">
+    <value>Set whether to keep the screen on and time to run for</value>
+  </data>
+  <data name="resSettingsGeneralSte.Header" xml:space="preserve">
+    <value>Screen and time</value>
+  </data>
+  <data name="resSettingsGeneralTb.Text" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="resSettingsGenScrStc.Description" xml:space="preserve">
+    <value>Keep screen on when active</value>
+  </data>
+  <data name="resSettingsGenScrStc.Header" xml:space="preserve">
+    <value>Screen</value>
+  </data>
+  <data name="resSettingsGenTimeStc.Description" xml:space="preserve">
+    <value>Keep awake for specified time interval</value>
+  </data>
+  <data name="resSettingsGenTimeStc.Header" xml:space="preserve">
+    <value>Time Interval</value>
+  </data>
+  <data name="resSettingsHeaderStc.Description" xml:space="preserve">
+    <value>Allow the application to keep your PC awake alongside with other options</value>
+  </data>
+  <data name="resSettingsHeaderStc.Header" xml:space="preserve">
+    <value>Allow to keep PC awake</value>
+  </data>
+  <data name="resSettingsPowerBtn.Content" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="resSettingsPowerModeStc.Description" xml:space="preserve">
+    <value>Set computer power mode to the best performance when running</value>
+  </data>
+  <data name="resSettingsPowerModeStc.Header" xml:space="preserve">
+    <value>Power mode</value>
+  </data>
+  <data name="resSettingsPowerSetStc.Description" xml:space="preserve">
+    <value>Change power mode manually in windows settings</value>
+  </data>
+  <data name="resSettingsPowerSetStc.Header" xml:space="preserve">
+    <value>Power settings</value>
+  </data>
+  <data name="resSettingsPowerSte.Description" xml:space="preserve">
+    <value>Force PC performance to the maximum when active</value>
+  </data>
+  <data name="resSettingsPowerSte.Header" xml:space="preserve">
+    <value>Performance boost</value>
+  </data>
+  <data name="resSettingsPowerTb.Text" xml:space="preserve">
+    <value>Power</value>
+  </data>
+  <data name="resStatusUpdate" xml:space="preserve">
+    <value>Status update</value>
+  </data>
+  <data name="resStatusUpdateFor" xml:space="preserve">
+    <value>for</value>
+  </data>
+  <data name="resStatusUpdateHours" xml:space="preserve">
+    <value>hours</value>
+  </data>
+  <data name="resStatusUpdateIsActive" xml:space="preserve">
+    <value>is active</value>
+  </data>
+  <data name="resStatusUpdateIsInactive" xml:space="preserve">
+    <value>is not active</value>
+  </data>
+  <data name="resStatusUpdateRunning" xml:space="preserve">
+    <value>and is running in the background</value>
+  </data>
+  <data name="resUpdateCancelledMsg" xml:space="preserve">
+    <value>Update is cancelled!</value>
+  </data>
+  <data name="resUpdateCompletedMsg" xml:space="preserve">
+    <value>Update is completed.</value>
+  </data>
+  <data name="resUpdateDeployedMsg" xml:space="preserve">
+    <value>Update is being deployed...</value>
+  </data>
+  <data name="resUpdateDownloadingMsg" xml:space="preserve">
+    <value>Update is being downloaded...</value>
+  </data>
+  <data name="resUpdateFailedMsg" xml:space="preserve">
+    <value>Failed to update the application!</value>
+  </data>
+  <data name="resUpdateLowBatteryMsg" xml:space="preserve">
+    <value>Update failed due to low battery!</value>
+  </data>
+  <data name="resUpdatePendingMsg" xml:space="preserve">
+    <value>Update is pending...</value>
+  </data>
+  <data name="resUpdateUnknownErrMsg" xml:space="preserve">
+    <value>Update failed due to unknow error!</value>
+  </data>
+  <data name="resUpdateWiFiRecommendedMsg" xml:space="preserve">
+    <value>WiFi is recommended in order to update the application!</value>
+  </data>
+  <data name="resUpdateWiFiRequiredMsg" xml:space="preserve">
+    <value>WiFi is required in order to update the application!</value>
+  </data>
+</root>

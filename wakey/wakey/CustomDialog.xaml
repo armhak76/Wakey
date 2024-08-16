@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentDialog
+    x:Class="wakey.CustomDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:wakey"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="Settings"
+    CloseButtonText="Close"
+    DefaultButton="Close"
+    Loaded="Loaded"
+    Closed="Closed">
+    <StackPanel>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50" />
+                <ColumnDefinition Width="500" />
+            </Grid.ColumnDefinitions>
+            <StackPanel Orientation = "Horizontal" Grid.Column = "0">
+                <FontIcon x:Name="Icon" FontSize="50"  Glyph="&#xE8EA;"/>
+            </StackPanel>
+            <StackPanel Orientation = "Horizontal" VerticalAlignment="Center" Grid.Column = "1" HorizontalAlignment = "Left">
+                <TextBlock x:Name="Text" Margin="20" TextWrapping="Wrap" MinWidth="150" MaxWidth="400" MinHeight="10" MaxHeight="100">
+                </TextBlock>
+            </StackPanel>
+        </Grid>
+    </StackPanel>
+</ContentDialog>
+    

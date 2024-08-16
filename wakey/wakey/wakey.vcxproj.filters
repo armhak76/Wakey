@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="MainWindow.xaml" />
+    <Page Include="PageSettings.xaml" />
+    <Page Include="PageAbout.xaml" />
+    <Page Include="PageBluetooth.xaml" />
+    <Page Include="CustomDialog.xaml">
+      <Filter>Custom</Filter>
+    </Page>
+    <Page Include="PageGeneral.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="MainWindow.idl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="$(GeneratedFilesDir)module.g.cpp" />
+    <ClCompile Include="MicrosoftStore.cpp">
+      <Filter>Custom</Filter>
+    </ClCompile>
+    <ClCompile Include="KeepAwake.cpp">
+      <Filter>Custom</Filter>
+    </ClCompile>
+    <ClCompile Include="HotKey.cpp">
+      <Filter>Custom</Filter>
+    </ClCompile>
+    <ClCompile Include="PowerSettings.cpp">
+      <Filter>Custom</Filter>
+    </ClCompile>
+    <ClCompile Include="BlueTooth.cpp">
+      <Filter>Custom</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Assets">
+      <UniqueIdentifier>{e48dc53e-40b1-40cb-970a-f89935452892}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Custom">
+      <UniqueIdentifier>{9ac19cf5-dd97-42fb-a6f8-7790a6a39f18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Strings">
+      <UniqueIdentifier>{f7dee09f-4258-468f-bc28-187476b3c0c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Strings\en-US">
+      <UniqueIdentifier>{1cf80d1f-8b39-413b-b2bf-b64d5f5a7c89}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="app.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="Resources.resw">
+      <Filter>Strings\en-US</Filter>
+    </PRIResource>
+  </ItemGroup>
+</Project>

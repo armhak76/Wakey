@@ -1,0 +1,10 @@
+namespace wakey
+{
+    enum IconType { Info, Warning, Error, Question, Purchase };
+
+    [default_interface]
+    runtimeclass CustomDialog : Microsoft.UI.Xaml.Controls.ContentDialog
+    {
+        CustomDialog(IconType icon, String text);
+    }
+}

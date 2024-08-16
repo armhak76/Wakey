@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
+  xmlns:uap5="http://schemas.microsoft.com/appx/manifest/uap/windows10/5"
+  xmlns:desktop6="http://schemas.microsoft.com/appx/manifest/desktop/windows10/6"
+  xmlns:uap3="http://schemas.microsoft.com/appx/manifest/uap/windows10/3"
+  xmlns:desktop="http://schemas.microsoft.com/appx/manifest/desktop/windows10"
+  IgnorableNamespaces="uap3 uap rescap"> 
+  <Identity
+    Name="ArmenHakobyan.37146BC221925"
+    Publisher="CN=48ADDF26-3680-43EB-B968-D1B3F8E30B15"
+    Version="3.0.49.0" />
+  <mp:PhoneIdentity PhoneProductId="a056dc87-9de6-4708-90e3-8ed3966ddc14" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <Properties>
+    <DisplayName>Wakey</DisplayName>
+    <PublisherDisplayName>Armen Hakobyan</PublisherDisplayName>
+    <Logo>Images\StoreLogo.png</Logo>
+    <!--
+    <desktop6:RegistryWriteVirtualization>disabled</desktop6:RegistryWriteVirtualization>
+    -->
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17763.0" MaxVersionTested="10.0.19041.0" />
+    <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.17763.0" MaxVersionTested="10.0.19041.0" />
+  </Dependencies>
+  <Resources>
+    <Resource Language="en-US"/>
+  </Resources>
+  <Applications>
+    <Application Id="App"
+      Executable="$targetnametoken$.exe"
+      EntryPoint="$targetentrypoint$">
+      <uap:VisualElements
+        DisplayName="ms-resource:resAppTitle"
+        Description="Application description"
+        BackgroundColor="transparent"  Square150x150Logo="Images\Square150x150Logo.png" Square44x44Logo="Images\Square44x44Logo.png">
+        <uap:DefaultTile ShortName="Wakey"  Square71x71Logo="Images\Square71x71Logo.png" Wide310x150Logo="Images\Wide310x150Logo.png" Square310x310Logo="Images\Square310x310Logo.png">
+          <uap:ShowNameOnTiles>
+            <uap:ShowOn Tile="square150x150Logo"/>
+            <uap:ShowOn Tile="square310x310Logo"/>
+            <uap:ShowOn Tile="wide310x150Logo"/>
+          </uap:ShowNameOnTiles>
+        </uap:DefaultTile>
+        <uap:LockScreen Notification="badgeAndTileText" BadgeLogo="Images\BadgeLogo.png"/>
+        <uap:SplashScreen Image="Images\SplashScreen.png"/>
+      </uap:VisualElements>
+      <Extensions>
+        <desktop:Extension
+            Category="windows.startupTask"
+            EntryPoint="Windows.FullTrustApplication">
+            <desktop:StartupTask
+              TaskId="Wakey"
+              Enabled="true"
+              DisplayName="Wakey" />
+        </desktop:Extension>
+        <uap3:Extension Category="windows.appExecutionAlias" EntryPoint="Windows.FullTrustApplication">
+          <uap3:AppExecutionAlias>
+            <desktop:ExecutionAlias Alias = "Wakey.exe"/>
+          </uap3:AppExecutionAlias>
+        </uap3:Extension>
+      </Extensions>
+    </Application>
+  </Applications> 
+  <Capabilities>
+    <rescap:Capability Name="runFullTrust"/>
+    <!--
+    <rescap:Capability Name="allowElevation"/>
+    <rescap:Capability Name="unvirtualizedResources" />    
+    -->
+    <DeviceCapability  Name="radios" />
+  </Capabilities>
+</Package>

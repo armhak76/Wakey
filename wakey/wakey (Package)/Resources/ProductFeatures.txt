@@ -1,0 +1,10 @@
+Has option to auto-start with windows
+Will display notifications when hidden in the tray window
+Has light and dark application theme support
+Global hotkey to show window when hidden
+Allows keeping PC awake
+Allows keeping the screen on as well
+Can be run for a specified time limit
+Can force power scheme to a better performance when plugged in or even on battery
+Can run in battery saver if the specified option is enabled
+Can lock the screen when linked Bluetooth device is away

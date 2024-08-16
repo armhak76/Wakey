@@ -1,0 +1,5 @@
+Wakey is an application that allows you to override default power settings. It can keep your computer awake indefinitely or for a specified time interval. It can keep a laptop awake when plugged in or even on battery power, if that option is specified.
+
+For example, when your computer is powered on, Wakey can force the power mode to be set to better performance, and once on battery, it can switch to a better battery power scheme. Wakey can also keep your screen on, and as a security precaution, you can link your Bluetooth device so that once you are away, the screen will be locked.
+
+It is very feature-rich and allows you to manipulate power settings in ways that are not possible with the default settings. Dark and light themes are supported. You can hide the application in the windows tray but turn on notifications, so you are always aware of what is going on with your PC.

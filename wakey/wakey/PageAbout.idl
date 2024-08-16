@@ -1,0 +1,8 @@
+namespace wakey
+{
+    [default_interface]
+    runtimeclass PageAbout : Microsoft.UI.Xaml.Controls.Page
+    {
+        PageAbout(void);
+    }
+}

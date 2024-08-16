@@ -1,0 +1,15 @@
+namespace wakey
+{
+    [default_interface]
+    runtimeclass PowerSettings : Windows.Foundation.IClosable
+    {
+        PowerSettings(Microsoft.UI.Xaml.Window window);
+
+        void    Register           (void);
+        void    UnRegister         (void);
+        void    GetOverlayScheme   (void);
+        void    SetOverlayScheme   (void);
+        void    UnSetOverlayScheme (void);
+        Boolean IsBatteryPresent   (void);
+    }
+}

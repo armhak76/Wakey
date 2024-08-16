@@ -1,0 +1,13 @@
+namespace wakey
+{
+    [default_interface]
+    runtimeclass MicrosoftStore : Windows.Foundation.IClosable
+    {
+        MicrosoftStore(Microsoft.UI.Xaml.Window window);
+
+        Windows.Foundation.IAsyncOperation<String>  PurchaseAsync(void);
+        Windows.Foundation.IAsyncOperation<String>  UpdateAsync  (void);
+        Windows.Foundation.IAsyncOperation<Boolean> RateAsync    (void);
+        Windows.Foundation.IAsyncAction             CheckPurchase(void);
+    }
+}

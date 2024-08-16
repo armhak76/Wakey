@@ -1,0 +1,12 @@
+namespace wakey
+{
+    [default_interface]
+    runtimeclass KeepAwake : Windows.Foundation.IClosable
+    {
+        KeepAwake   (Microsoft.UI.Xaml.Window window, UInt32 uTimeOut);
+
+        void Start  (Boolean bFirst);
+        void Reload (void);
+        void Stop   (void);
+    }
+}

@@ -1,0 +1,19 @@
+namespace wakey
+{
+    [default_interface]
+    runtimeclass HotKey : Windows.Foundation.IClosable
+    {
+        HotKey(Microsoft.UI.Xaml.Window window);
+
+        void Restore            (Microsoft.UI.Xaml.Controls.TextBox txt);
+        void ScanPreviewKeyDown (Windows.System.VirtualKey key, Microsoft.UI.Xaml.Controls.TextBox txt);
+        void ScanKeyUp          (Windows.System.VirtualKey key, Microsoft.UI.Xaml.Controls.TextBox txt);
+        void ScanModKey         (Windows.System.VirtualKey key, String value);
+        void ScanKeyDown        (Windows.System.VirtualKey key);        
+        
+
+        Boolean Register    (void);
+        void    UnRegister  (void);
+
+    }
+}

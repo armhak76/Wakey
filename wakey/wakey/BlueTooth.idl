@@ -1,0 +1,29 @@
+namespace wakey
+{
+    enum BluetoothStatus        { None, StatusEnabled, StatusDisabled };
+    enum BluetoothDeviceChange  { None, EnumStarted, DeviceAdded, DeviceUpdated, DeviceRemoved, EnumComplete, EnumStopped };
+
+    delegate void OnStatusChangedHandler(BluetoothStatus eBluetoothStatus);
+    delegate void OnDeviceChangedHandler(String strID, BluetoothDeviceChange eBluetoothDeviceChange);
+
+    [default_interface]
+    runtimeclass BlueTooth : Windows.Foundation.IClosable
+    {
+        BlueTooth(void);
+
+        Boolean IsEnabled(void);
+
+        Windows.Foundation.Collections.IObservableMap<String, Object>   GetDevices{ get; };
+        Windows.Devices.Enumeration.DeviceInformation LookupDeviceByName(String strName);
+
+        event wakey.OnDeviceChangedHandler OnDeviceChanged;
+        event wakey.OnStatusChangedHandler OnStatusChanged;
+
+        Boolean LookupWasDeviceConnectedByName(String strName);
+        Boolean LookupWasDeviceConnectedById  (String strId);
+        Boolean LookupIsDeviceConnected       (Windows.Devices.Enumeration.DeviceInformation di);
+        Boolean LookupIsDeviceConnectedById   (String strID);
+        Boolean LookupIsDeviceConnectedByName (String strName);
+        String  LookupDeviceNameById          (String strID);
+    }
+}

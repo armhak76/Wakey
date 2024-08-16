@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '15.0'">
+    <VisualStudioVersion>15.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_SideLoad|x86">
+      <Configuration>Debug_SideLoad</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_SideLoad|x64">
+      <Configuration>Debug_SideLoad</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_SideLoad|ARM64">
+      <Configuration>Debug_SideLoad</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_MsStore|x86">
+      <Configuration>Debug_MsStore</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_MsStore|x64">
+      <Configuration>Debug_MsStore</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_MsStore|ARM64">
+      <Configuration>Debug_MsStore</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_SideLoad|x86">
+      <Configuration>Release_SideLoad</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_SideLoad|x64">
+      <Configuration>Release_SideLoad</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_SideLoad|ARM64">
+      <Configuration>Release_SideLoad</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_MsStore|x86">
+      <Configuration>Release_MsStore</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_MsStore|x64">
+      <Configuration>Release_MsStore</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_MsStore|ARM64">
+      <Configuration>Release_MsStore</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup>
+    <WapProjPath Condition="'$(WapProjPath)'==''">$(MSBuildExtensionsPath)\Microsoft\DesktopBridge\</WapProjPath>
+    <DebuggerType>NativeOnly</DebuggerType>
+    <BackgroundTaskDebugEngines>NativeOnly</BackgroundTaskDebugEngines>
+  </PropertyGroup>
+  <Import Project="$(WapProjPath)\Microsoft.DesktopBridge.props" />
+  <PropertyGroup>
+    <ProjectGuid>17746cd3-0a6d-418c-8a06-891fcf809f44</ProjectGuid>
+    <TargetPlatformVersion>10.0.22621.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
+    <EntryPointProjectUniqueName>..\wakey\wakey.vcxproj</EntryPointProjectUniqueName>
+    <GenerateAppInstallerFile>False</GenerateAppInstallerFile>
+    <AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <GenerateTestArtifacts>False</GenerateTestArtifacts>
+    <AppxBundlePlatforms>x86|x64|arm64</AppxBundlePlatforms>
+    <AppInstallerUri>c:\</AppInstallerUri>
+    <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
+    <PackageCertificateThumbprint>D0FD6E1512262D7D8EBA22A3CA30B2B16B66DC3A</PackageCertificateThumbprint>
+    <AppxSymbolPackageEnabled>False</AppxSymbolPackageEnabled>
+    <GenerateTemporaryStoreCertificate>True</GenerateTemporaryStoreCertificate>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_MsStore|x86'">
+    <AppxBundle>Always</AppxBundle>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_MsStore|x64'">
+    <AppxBundle>Always</AppxBundle>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_MsStore|ARM64'">
+    <AppxBundle>Always</AppxBundle>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SideLoad|x86'">
+    <AppxBundle>Always</AppxBundle>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SideLoad|x64'">
+    <AppxBundle>Always</AppxBundle>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SideLoad|ARM64'">
+    <AppxBundle>Always</AppxBundle>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_MsStore|x86'">
+    <AppxBundle>Always</AppxBundle>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_MsStore|x64'">
+    <AppxBundle>Always</AppxBundle>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_MsStore|ARM64'">
+    <AppxBundle>Always</AppxBundle>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SideLoad|x86'">
+    <AppxBundle>Always</AppxBundle>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SideLoad|x64'">
+    <AppxBundle>Always</AppxBundle>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SideLoad|ARM64'">
+    <AppxBundle>Always</AppxBundle>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.MsStore.appxmanifest" Condition="'$(Configuration)|$(Platform)'=='Release_MsStore|x86'">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <AppxManifest Include="Package.MsStore.appxmanifest" Condition="'$(Configuration)|$(Platform)'=='Release_MsStore|x64'">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <AppxManifest Include="Package.MsStore.appxmanifest" Condition="'$(Configuration)|$(Platform)'=='Release_MsStore|ARM64'">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <AppxManifest Include="Package.MsStore.appxmanifest" Condition="'$(Configuration)|$(Platform)'=='Debug_MsStore|x86'">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <AppxManifest Include="Package.MsStore.appxmanifest" Condition="'$(Configuration)|$(Platform)'=='Debug_MsStore|x64'">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <AppxManifest Include="Package.MsStore.appxmanifest" Condition="'$(Configuration)|$(Platform)'=='Debug_MsStore|ARM64'">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <AppxManifest Include="Package.SideLoad.appxmanifest" Condition="'$(Configuration)|$(Platform)'=='Release_SideLoad|x86'">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <AppxManifest Include="Package.SideLoad.appxmanifest" Condition="'$(Configuration)|$(Platform)'=='Release_SideLoad|x64'">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <AppxManifest Include="Package.SideLoad.appxmanifest" Condition="'$(Configuration)|$(Platform)'=='Release_SideLoad|ARM64'">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <AppxManifest Include="Package.SideLoad.appxmanifest" Condition="'$(Configuration)|$(Platform)'=='Debug_SideLoad|x86'">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <AppxManifest Include="Package.SideLoad.appxmanifest" Condition="'$(Configuration)|$(Platform)'=='Debug_SideLoad|x64'">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <AppxManifest Include="Package.SideLoad.appxmanifest" Condition="'$(Configuration)|$(Platform)'=='Debug_SideLoad|ARM64'">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\wakey\wakey.vcxproj">
+      <SkipGetTargetFrameworkProperties>True</SkipGetTargetFrameworkProperties>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.5.240627000">
+      <IncludeAssets>build</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="[10.0.22621.755]">
+      <IncludeAssets>build</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Package.StoreAssociation.xml" />
+    <Content Include="Images\BadgeLogo.scale-100.png" />
+    <Content Include="Images\BadgeLogo.scale-125.png" />
+    <Content Include="Images\BadgeLogo.scale-150.png" />
+    <Content Include="Images\BadgeLogo.scale-200.png" />
+    <Content Include="Images\BadgeLogo.scale-400.png" />
+    <Content Include="Images\coffee-cup-50.png" />
+    <Content Include="Images\coffee_cup.ico" />
+    <Content Include="Images\SplashScreen.scale-100.png" />
+    <Content Include="Images\SplashScreen.scale-125.png" />
+    <Content Include="Images\SplashScreen.scale-150.png" />
+    <Content Include="Images\SplashScreen.scale-200.png" />
+    <Content Include="Images\SplashScreen.scale-400.png" />
+    <Content Include="Images\Square150x150Logo.scale-100.png" />
+    <Content Include="Images\Square150x150Logo.scale-125.png" />
+    <Content Include="Images\Square150x150Logo.scale-150.png" />
+    <Content Include="Images\Square150x150Logo.scale-200.png" />
+    <Content Include="Images\Square150x150Logo.scale-400.png" />
+    <Content Include="Images\Square310x310Logo.scale-100.png" />
+    <Content Include="Images\Square310x310Logo.scale-125.png" />
+    <Content Include="Images\Square310x310Logo.scale-150.png" />
+    <Content Include="Images\Square310x310Logo.scale-200.png" />
+    <Content Include="Images\Square310x310Logo.scale-400.png" />
+    <Content Include="Images\Square44x44Logo.altform-lightunplated_targetsize-16.png" />
+    <Content Include="Images\Square44x44Logo.altform-lightunplated_targetsize-24.png" />
+    <Content Include="Images\Square44x44Logo.altform-lightunplated_targetsize-256.png" />
+    <Content Include="Images\Square44x44Logo.altform-lightunplated_targetsize-32.png" />
+    <Content Include="Images\Square44x44Logo.altform-lightunplated_targetsize-48.png" />
+    <Content Include="Images\Square44x44Logo.altform-unplated_targetsize-16.png" />
+    <Content Include="Images\Square44x44Logo.altform-unplated_targetsize-24.png" />
+    <Content Include="Images\Square44x44Logo.altform-unplated_targetsize-256.png" />
+    <Content Include="Images\Square44x44Logo.altform-unplated_targetsize-32.png" />
+    <Content Include="Images\Square44x44Logo.altform-unplated_targetsize-48.png" />
+    <Content Include="Images\Square44x44Logo.scale-100.png" />
+    <Content Include="Images\Square44x44Logo.scale-125.png" />
+    <Content Include="Images\Square44x44Logo.scale-150.png" />
+    <Content Include="Images\Square44x44Logo.scale-200.png" />
+    <Content Include="Images\Square44x44Logo.scale-400.png" />
+    <Content Include="Images\Square44x44Logo.targetsize-16.png" />
+    <Content Include="Images\Square44x44Logo.targetsize-24.png" />
+    <Content Include="Images\Square44x44Logo.targetsize-256.png" />
+    <Content Include="Images\Square44x44Logo.targetsize-32.png" />
+    <Content Include="Images\Square44x44Logo.targetsize-48.png" />
+    <Content Include="Images\Square71x71Logo.scale-100.png" />
+    <Content Include="Images\Square71x71Logo.scale-125.png" />
+    <Content Include="Images\Square71x71Logo.scale-150.png" />
+    <Content Include="Images\Square71x71Logo.scale-200.png" />
+    <Content Include="Images\Square71x71Logo.scale-400.png" />
+    <Content Include="Images\StoreLogo.scale-100.png" />
+    <Content Include="Images\StoreLogo.scale-125.png" />
+    <Content Include="Images\StoreLogo.scale-150.png" />
+    <Content Include="Images\StoreLogo.scale-200.png" />
+    <Content Include="Images\StoreLogo.scale-400.png" />
+    <Content Include="Images\Wide310x150Logo.scale-100.png" />
+    <Content Include="Images\Wide310x150Logo.scale-125.png" />
+    <Content Include="Images\Wide310x150Logo.scale-150.png" />
+    <Content Include="Images\Wide310x150Logo.scale-200.png" />
+    <Content Include="Images\Wide310x150Logo.scale-400.png" />
+  </ItemGroup>
+  <Import Project="$(WapProjPath)\Microsoft.DesktopBridge.targets" />
+</Project>

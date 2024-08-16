@@ -1,0 +1,9 @@
+namespace wakey
+{
+    [default_interface]
+    runtimeclass PageSettings : Microsoft.UI.Xaml.Controls.Page
+    {
+        PageSettings(void);
+        void TimeIntervalFinished(void);
+    }
+}
