@@ -17,3 +17,7 @@
 /wakey/wakey (Package)/bin
 /wakey/wakey (Package)/BundleArtifacts
 /x64/Release_SideLoad/wakey
+/ARM64/Release_MsStore/wakey
+/wakey/wakey/ARM64/Release_MsStore
+/wakey/wakey/x64/Debug_SideLoad
+/x64/Debug_SideLoad/wakey
