@@ -44,7 +44,7 @@ namespace winrt::wakey::implementation
         winrt::Windows::Storage::ApplicationDataContainer localSettings =
             winrt::Windows::Storage::ApplicationData::Current().LocalSettings();
 
-        if(localSettings)
+        if (localSettings)
             localSettings.Values().Insert(key, value);
     }
 
@@ -73,7 +73,7 @@ namespace winrt::wakey::implementation
         ::winrt::Windows::Storage::ApplicationDataContainer localSettings =
             winrt::Windows::Storage::ApplicationData::Current().LocalSettings();
 
-        ::winrt::param::hstring hstrKey = 
+        ::winrt::param::hstring hstrKey =
             SettingTypeToString(Settings::SettingType::WindowPlacement);
 
         if (!localSettings ||
@@ -82,26 +82,26 @@ namespace winrt::wakey::implementation
             return false;
         }
 
-        ::winrt::Windows::Foundation::IInspectable ii = 
+        ::winrt::Windows::Foundation::IInspectable ii =
             localSettings.Values().Lookup(hstrKey);
 
         ::winrt::Windows::Storage::ApplicationDataCompositeValue compositeVal =
             ii.try_as<::winrt::Windows::Storage::ApplicationDataCompositeValue>();
-        
+
         if (!compositeVal)
             return false;
 
-        wp.length                   = winrt::unbox_value<uint32_t>(compositeVal.Lookup(L"wp.length"));
-        wp.flags                    = winrt::unbox_value<uint32_t>(compositeVal.Lookup(L"wp.flags"));
-        wp.showCmd                  = winrt::unbox_value<uint32_t>(compositeVal.Lookup(L"wp.showCmd"));
-        wp.ptMinPosition.x          = winrt::unbox_value<uint32_t>(compositeVal.Lookup(L"wp.ptMinPosition.x"));
-        wp.ptMinPosition.y          = winrt::unbox_value<uint32_t>(compositeVal.Lookup(L"wp.ptMinPosition.y"));
-        wp.ptMaxPosition.x          = winrt::unbox_value<uint32_t>(compositeVal.Lookup(L"wp.ptMaxPosition.x"));
-        wp.ptMaxPosition.y          = winrt::unbox_value<uint32_t>(compositeVal.Lookup(L"wp.ptMaxPosition.y"));
-        wp.rcNormalPosition.left    = winrt::unbox_value<uint32_t>(compositeVal.Lookup(L"wp.rcNormalPosition.left"));
-        wp.rcNormalPosition.top     = winrt::unbox_value<uint32_t>(compositeVal.Lookup(L"wp.rcNormalPosition.top"));
-        wp.rcNormalPosition.right   = winrt::unbox_value<uint32_t>(compositeVal.Lookup(L"wp.rcNormalPosition.right"));
-        wp.rcNormalPosition.bottom  = winrt::unbox_value<uint32_t>(compositeVal.Lookup(L"wp.rcNormalPosition.bottom"));
+        wp.length = winrt::unbox_value<uint32_t>(compositeVal.Lookup(L"wp.length"));
+        wp.flags = winrt::unbox_value<uint32_t>(compositeVal.Lookup(L"wp.flags"));
+        wp.showCmd = winrt::unbox_value<uint32_t>(compositeVal.Lookup(L"wp.showCmd"));
+        wp.ptMinPosition.x = winrt::unbox_value<uint32_t>(compositeVal.Lookup(L"wp.ptMinPosition.x"));
+        wp.ptMinPosition.y = winrt::unbox_value<uint32_t>(compositeVal.Lookup(L"wp.ptMinPosition.y"));
+        wp.ptMaxPosition.x = winrt::unbox_value<uint32_t>(compositeVal.Lookup(L"wp.ptMaxPosition.x"));
+        wp.ptMaxPosition.y = winrt::unbox_value<uint32_t>(compositeVal.Lookup(L"wp.ptMaxPosition.y"));
+        wp.rcNormalPosition.left = winrt::unbox_value<uint32_t>(compositeVal.Lookup(L"wp.rcNormalPosition.left"));
+        wp.rcNormalPosition.top = winrt::unbox_value<uint32_t>(compositeVal.Lookup(L"wp.rcNormalPosition.top"));
+        wp.rcNormalPosition.right = winrt::unbox_value<uint32_t>(compositeVal.Lookup(L"wp.rcNormalPosition.right"));
+        wp.rcNormalPosition.bottom = winrt::unbox_value<uint32_t>(compositeVal.Lookup(L"wp.rcNormalPosition.bottom"));
 
         return true;
     }
@@ -115,23 +115,23 @@ namespace winrt::wakey::implementation
         ::winrt::Windows::Storage::ApplicationDataCompositeValue compositeVal =
             ::winrt::Windows::Storage::ApplicationDataCompositeValue();
 
-        compositeVal.Insert(L"wp.length",                   winrt::box_value((uint32_t)wp.length));
-        compositeVal.Insert(L"wp.flags",                    winrt::box_value((uint32_t)wp.flags ));
-        compositeVal.Insert(L"wp.showCmd",                  winrt::box_value((uint32_t)wp.showCmd));
-        compositeVal.Insert(L"wp.ptMinPosition.x",          winrt::box_value((uint32_t)wp.ptMinPosition.x));
-        compositeVal.Insert(L"wp.ptMinPosition.y",          winrt::box_value((uint32_t)wp.ptMinPosition.y));
-        compositeVal.Insert(L"wp.ptMaxPosition.x",          winrt::box_value((uint32_t)wp.ptMaxPosition.x));
-        compositeVal.Insert(L"wp.ptMaxPosition.y",          winrt::box_value((uint32_t)wp.ptMaxPosition.y));
-        compositeVal.Insert(L"wp.rcNormalPosition.left",    winrt::box_value((uint32_t)wp.rcNormalPosition.left));
-        compositeVal.Insert(L"wp.rcNormalPosition.top",     winrt::box_value((uint32_t)wp.rcNormalPosition.top));
-        compositeVal.Insert(L"wp.rcNormalPosition.right",   winrt::box_value((uint32_t)wp.rcNormalPosition.right));
-        compositeVal.Insert(L"wp.rcNormalPosition.bottom",  winrt::box_value((uint32_t)wp.rcNormalPosition.bottom));
+        compositeVal.Insert(L"wp.length", winrt::box_value((uint32_t)wp.length));
+        compositeVal.Insert(L"wp.flags", winrt::box_value((uint32_t)wp.flags));
+        compositeVal.Insert(L"wp.showCmd", winrt::box_value((uint32_t)wp.showCmd));
+        compositeVal.Insert(L"wp.ptMinPosition.x", winrt::box_value((uint32_t)wp.ptMinPosition.x));
+        compositeVal.Insert(L"wp.ptMinPosition.y", winrt::box_value((uint32_t)wp.ptMinPosition.y));
+        compositeVal.Insert(L"wp.ptMaxPosition.x", winrt::box_value((uint32_t)wp.ptMaxPosition.x));
+        compositeVal.Insert(L"wp.ptMaxPosition.y", winrt::box_value((uint32_t)wp.ptMaxPosition.y));
+        compositeVal.Insert(L"wp.rcNormalPosition.left", winrt::box_value((uint32_t)wp.rcNormalPosition.left));
+        compositeVal.Insert(L"wp.rcNormalPosition.top", winrt::box_value((uint32_t)wp.rcNormalPosition.top));
+        compositeVal.Insert(L"wp.rcNormalPosition.right", winrt::box_value((uint32_t)wp.rcNormalPosition.right));
+        compositeVal.Insert(L"wp.rcNormalPosition.bottom", winrt::box_value((uint32_t)wp.rcNormalPosition.bottom));
 
         Set(Settings::SettingType::WindowPlacement, compositeVal);
     }
 
     ///////////////////////////////////////////////////////////////////////////////
-    
+
     VOID Settings::Set(
         _In_ winrt::wakey::implementation::Settings::SettingType key,
         _In_ const winrt::Windows::Foundation::IInspectable& value
@@ -149,7 +149,7 @@ namespace winrt::wakey::implementation
     {
         return Get(SettingTypeToString(key), default);
     }
-    
+
     ///////////////////////////////////////////////////////////////////////////////
 
     ::winrt::param::hstring Settings::SettingTypeToString(
@@ -249,7 +249,7 @@ namespace winrt::wakey::implementation
         );
     }
 
-///////////////////////////////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////////////////////
 
     BOOL Notifications::ShouldShow(VOID)
     {
@@ -261,8 +261,8 @@ namespace winrt::wakey::implementation
     ///////////////////////////////////////////////////////////////////////////////
 
     VOID Notifications::Show(
-        _In_ ::winrt::param::hstring const& title,
-        _In_ ::winrt::param::hstring const& text
+        _In_::winrt::param::hstring const& title,
+        _In_::winrt::param::hstring const& text
     )
     {
         if (!ShouldShow())
@@ -294,7 +294,7 @@ namespace winrt::wakey::implementation
         toastNotifier.Show(notif);
     }
 
-///////////////////////////////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////////////////////
 
     BOOL Wnd::s_bFirst = TRUE;
 
@@ -367,7 +367,7 @@ namespace winrt::wakey::implementation
             hWnd,
             posX,
             posY,
-            rectClient.right  - rectClient.left,
+            rectClient.right - rectClient.left,
             rectClient.bottom - rectClient.top,
             TRUE
         );
@@ -398,7 +398,7 @@ namespace winrt::wakey::implementation
     VOID Wnd::Activate(
         _In_ winrt::Microsoft::UI::Xaml::Window const& window
     )
-    {        
+    {
         RestorePlacement(window);
         window.Activate();
     }
@@ -454,7 +454,7 @@ namespace winrt::wakey::implementation
         if (!::IsWindow(hWnd))
             return;
 
-        if(s_bFirst)
+        if (s_bFirst)
         {
             WINDOWPLACEMENT wp;
             if (Settings::GetWindowPlacement(wp))
@@ -469,6 +469,25 @@ namespace winrt::wakey::implementation
             Wnd::Show(hWnd, TRUE);
 
         SetForegroundWindow(hWnd);
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////
+
+    VOID Wnd::Hide(_In_ HWND hWnd)
+    {
+
+        //if (!::IsIconic(hWnd))
+        //    ShowWindow(hWnd, SW_HIDE);
+        if (IsWindowVisible(hWnd))
+        {
+            winrt::Microsoft::UI::WindowId winID =
+                winrt::Microsoft::UI::GetWindowIdFromWindow(hWnd);
+
+            winrt::Microsoft::UI::Windowing::AppWindow appWnd =
+                winrt::Microsoft::UI::Windowing::AppWindow::GetFromWindowId(winID);
+
+            appWnd.Hide();
+        }
     }
 
     ///////////////////////////////////////////////////////////////////////////////

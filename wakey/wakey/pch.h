@@ -157,6 +157,7 @@ namespace winrt::wakey::implementation
         static WNDPROC      Subclass            (_In_ HWND hWnd, _In_ WNDPROC pfnWndProcNew);
         static VOID         RemoveStyle         (_In_ HWND hWnd, _In_ LONG_PTR dwExStyle);
         static VOID         Show                (_In_ HWND hWnd, _In_ bool bShow);
+        static VOID         Hide                (_In_ HWND hWnd);
         static VOID         Activate            (_In_ HWND hWnd);
         static VOID         Activate            (_In_::winrt::Microsoft::UI::Xaml::Window const& window);
         static HWND         GetHwnd             (_In_::winrt::Microsoft::UI::Xaml::Window const& window);

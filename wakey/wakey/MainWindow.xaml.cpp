@@ -370,7 +370,10 @@ namespace winrt::wakey::implementation
             break;
         case WM_HOTKEY:
         case WM_LBUTTONDBLCLK:
-            Wnd::Activate(hWnd);
+            if (!::IsWindowVisible(hWnd))
+                Wnd::Activate(hWnd);
+            else
+                Wnd::Hide(hWnd);
             break;
         case WM_POWERBROADCAST:
             if (!sbFirstNotif)
@@ -393,7 +396,10 @@ namespace winrt::wakey::implementation
             {
             case WM_LBUTTONDBLCLK:
             {
-                Wnd::Activate(hWnd);
+                if (!::IsWindowVisible(hWnd))
+                    Wnd::Activate(hWnd);
+                else
+                    Wnd::Hide(hWnd);
             }
             break;
             case WM_RBUTTONUP:
@@ -401,7 +407,11 @@ namespace winrt::wakey::implementation
                 HMENU hMenu = CreatePopupMenu();
                 _ASSERTE(hMenu);
 
-                InsertMenuW(hMenu, 0, MF_BYPOSITION | MF_STRING, IDM_OPEN, L"&Open");
+                if (!::IsWindowVisible(hWnd))
+                    InsertMenuW(hMenu, 0, MF_BYPOSITION | MF_STRING, IDM_OPEN, L"&Show");
+                else
+                    InsertMenuW(hMenu, 0, MF_BYPOSITION | MF_STRING, IDM_OPEN, L"&Hide");
+
                 InsertMenuW(hMenu, 1, MF_BYPOSITION | MF_SEPARATOR, 0, NULL);
                 InsertMenuW(hMenu, 2, MF_BYPOSITION | MF_STRING, IDM_EXIT, L"Ex&it");
 
@@ -416,7 +426,10 @@ namespace winrt::wakey::implementation
                 DestroyMenu(hMenu);
                 if (uCmd == IDM_OPEN)
                 {
-                    Wnd::Activate(hWnd);
+                    if (!::IsWindowVisible(hWnd))
+                        Wnd::Activate(hWnd);
+                    else
+                        Wnd::Hide(hWnd);
                 }
                 else if (uCmd == IDM_EXIT)
                 {
